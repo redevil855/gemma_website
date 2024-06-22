@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+li{
+  background-color: white;
+  color: white;
+}
+body{
+  background: #dfe9f5;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 110vh;
+  left: 0;
+  background: #fff;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 20%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+.nav-item1{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  
+}
+
+
+.nav-item1:hover{
+
+  transform: translateY(-115px);
+  background-color: silver;
+  font-weight: bold;
+}
+a:hover{
+  background-color: silver;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+}
+.main-skills .card{
+  width: 25%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-skills .card p{
+  font-size: 12px;
+}
+.main-skills .card button{
+  background: orangered;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: rgba(223, 70, 15, 0.856);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Courses */
+.main-course{
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.course-box{
+  width: 100%;
+  height: 300px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 33%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.box button{
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.box button:hover{
+  background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color: rgb(25, 94, 54);
+}
+.css{
+  color: rgb(104, 179, 35);
+}
+.js{
+  color: rgb(28, 98, 179);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  top:1px;
+
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-card1 {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left; /* Adjust text alignment for course cards */
+  position: absolute;
+  top: 30px;
+  left: 800px;
+   width:450px ;
+
+}
+
+
+
+
+.course-card1 video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.course-card1 h2 {
+  margin-bottom: 5px;
+}
+.course-card1 p {
+  line-height: 1.6;
+}
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+
+
+
+.course-card1:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  
+}
+
+
+
+.course-card2 {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left; /* Adjust text alignment for course cards */
+  position: absolute;
+  top: 30px;
+  left:315px;
+  width: 450px;
+  height: 390px;
+
+}
+
+
+
+
+.course-card2 video {
+  width: 100%;
+  height:280px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom:50px;
+
+
+}
+
+
+.course-card2 h2 {
+ position: absolute;
+ bottom: 50px;
+}
+.course-card2 p {
+  line-height: 1.6;
+  position: absolute;
+  bottom: 15px;
+}
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+
+
+
+
+
+.course-card2:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  
+}
+
+.course-card3 {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left; /* Adjust text alignment for course cards */
+  position: absolute;
+  top: 430px;
+  left: 800px;
+   width:450px ;
+
+}
+
+
+
+
+.course-card3 video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.course-card3 h2 {
+  margin-bottom: 5px;
+}
+.course-card p {
+  line-height: 1.6;
+}
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+
+
+
+
+
+.course-card3:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+
+
+
+
+
+
+
+.course-card4 {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left; /* Adjust text alignment for course cards */
+  position: absolute;
+  top: 430px;
+  left:315px;
+  width: 450px;
+  height: 390px;
+}
+  .course-card4:hover{
+  transform-style: preserve-3d;
+  animation: animates 50s linear infinite;
+
+
+}
+
+@keyframes animates  {
+  0%{
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+      transform: perspective(1000px) rotateY(-370deg);
+  }
+}
+
+
+
+
+.course-card4 video {
+  width: 100%;
+  height:240px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom:5px;
+
+
+}
+
+
+.course-card4 h2 {
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 80px;
+
+}
+.course-card4 p {
+  line-height: 1.6;
+  position: absolute;
+  bottom: 20px;
+}
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+
+.course-card4:hover{
+transform: translateY(-15px);
+box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+
+
+}
+
+
+
+.img15{
+  
+  animation: animate 5s linear infinite;
+
+}
+  
+@keyframes animate  {
+  0%{
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+      transform: perspective(1000px) rotateY(-370deg);
+  }
+}

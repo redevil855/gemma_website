@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>abdulrahman</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/css.css') }}">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <form action="{{ url_for('application_page') }}" method="post">
+      <h2>Personal Data</h2>
+      <p>Please fill out the form</p>
+      <hr>
+      <br>
+
+      <label for="fname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="fname" id="fname" required>
+
+      <label for="lname"><b>Second Name</b></label>
+      <input type="text" placeholder="Second Name" name="lname" id="lname">
+
+      <label for="qualification"><b>qualification</b></label>
+      <input type="text" placeholder="Enter the qualification" name="qualification" id="qualification" required>
+
+      <label for="university"><b>university</b></label>
+      <input type="text" placeholder="Enter university" name="university" id="university" required>
+
+      <label for="address"><b>address</b></label>
+      <input type="text" placeholder="address" name="address" id="address" required>
+
+      <label for="id_number"><b>id_number</b></label>
+      <input type="text" placeholder="id number" name="id_number" id="id_number" required>
+
+      <label for="birthdate"><b>birthdate</b></label><br>
+      <input type="date" placeholder="Enter birthdate" name="birthdate" id="birthdate" required>
+      <br><br>
+      <label for="job_title"><b>job title</b></label>
+      <input type="text" placeholder="Enter your job title" name="job_title" id="job_title" required>
+
+      <label for="department"><b>department</b></label>
+      <select id="department" name="department" required>
+        <option value="">select the department</option>
+        <option value="Human resources">Human resources</option>
+        <option value="Production">Production</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Mangment">Mangment</option>
+      </select>
+
+      <label for="email"><b>email</b></label>
+      <input type="email" placeholder="Enter your email" name="email" id="email" required>
+
+      <label for="home_phone"><b>home phone</b></label>
+      <input type="tel" placeholder="Enter the home phone" name="home_phone" id="home_phone" required>
+
+      <label for="mobile_phone"><b>mobile</b></label>
+      <input type="tel" placeholder="Enter the mobile phone" name="mobile_phone" id="mobile_phone" required>
+
+      <h2>Emergency contact information</h2><br>
+
+      <label for="emergency_contact_name"><b>Name</b></label>
+      <input type="text" placeholder="Enter the name" name="emergency_contact_name" id="emergency_contact_name"
+        required>
+
+      <label for="emergency_contact_relationship"><b>Relationship with the employee</b></label>
+      <input type="text" placeholder="Enter the employee relationship" name="emergency_contact_relationship"
+        id="emergency_contact_relationship" required>
+
+      <label for="emergency_contact_address"><b>Contact address if different from the one mentioned above</b></label>
+      <input type="text" placeholder="Enter the contact address if it is different from the one above"
+        name="emergency_contact_address" id="emergency_contact_address">
+
+      <label for="emergency_contact_email"><b>email</b></label>
+      <input type="email" placeholder="Enter your email" name="emergency_contact_email" id="emergency_contact_email">
+
+      <label for="emergency_contact_home_phone"><b>Home phone</b></label>
+      <input type="tel" placeholder="Enter the home phone" name="emergency_contact_home_phone"
+        id="emergency_contact_home_phone">
+
+      <label for="emergency_contact_work_phone"><b>Work phone</b></label>
+      <input type="tel" placeholder="Enter the work phone" name="emergency_contact_work_phone"
+        id="emergency_contact_work_phone">
+
+      <label for="emergency_contact_mobile_phone"><b>Personal mobile phone</b></label>
+      <input type="tel" placeholder="Enter personal mobile phone" name="emergency_contact_mobile">
+
+      <label for="interview"><b>interview</b></label>
+      <select id="interview" name="interview" required>
+        <option value="company">company </option>
+        <option value="online">online</option>
+      </select>
+      <input type="submit" value="Enter">
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container">
+
+        <!--Analog Clock-->
+        <div class="clock">
+
+          <div class="circle" id="sc" style="--clr:#04fc43;"><i></i></div>
+          <div class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></div>
+          <div class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></div>
+
+          <span style="--i:1;"><b>1</b></span>
+          <span style="--i:2;"><b>2</b></span>
+          <span style="--i:3;"><b>3</b></span>
+          <span style="--i:4;"><b>4</b></span>
+          <span style="--i:5;"><b>5</b></span>
+          <span style="--i:6;"><b>6</b></span>
+          <span style="--i:7;"><b>7</b></span>
+          <span style="--i:8;"><b>8</b></span>
+          <span style="--i:9;"><b>9</b></span>
+          <span style="--i:10;"><b>10</b></span>
+          <span style="--i:11;"><b>11</b></span>
+          <span style="--i:12;"><b>12</b></span>
+
+        </div>
+
+        <!--digital clock-->
+        <div id="time">
+
+          <div id="hours" style="--clr:#ff2972;">00</div>
+          <div id="minutes" style="--clr:#fee800;">00</div>
+          <div id="seconds" style="--clr:#04fc43;">00</div>
+          <div id="ampm">AM</div>
+
+        </div>
+
+      </div>
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>

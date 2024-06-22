@@ -1,0 +1,19 @@
+<header class="header">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+    <nav class="navbar">
+      
+      
+        <a href="{{ url_for('vistor') }}">Log out</a>
+        <a href="{{ url_for('about_us') }}">About us</a>
+        <a href="https://zoom.us/">Meeting Room</a>
+        <a href="{{ url_for('bus_schedules') }}">Bus schedules</a>
+        {% if user %}
+          {% if user.access == 1 %}
+          <a href="{{ url_for('admin_dashboard') }}">Admin Dashboard</a>
+          {% elif user.access == 0 %}
+          <a href="{{ url_for('employer_dashboard') }}">Employer Dashboard</a>
+          {% endif %}
+        {% endif %}
+        <a href="{{ url_for('home') }}">home</a>
+    </nav>
+</header>
