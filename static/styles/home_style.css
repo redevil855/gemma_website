@@ -16,17 +16,17 @@ body {
 
 .header {
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 1.5rem 10%;
     background: rgba(255, 255, 255, .1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255, 255, 255, .2);
-    z-index: 999; 
+    z-index: 999;
 }
 
 .header::before {
@@ -46,60 +46,39 @@ body {
 
 .logo {
     color: #fff;
-    font-size: 25px;
+    font-size: 1.563rem; /* roughly 25px */
     text-decoration: none;
     font-weight: 600;
     cursor: default;
-    height: 80px;
+    height: 5rem; /* roughly 80px */
 }
 
 .navbar a {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem; /* roughly 18px */
     text-decoration: none;
-    margin-left: 35px;
+    margin-left: 2.1875rem; /* roughly 35px */
     transition: .3s;
-}
-
-.navbar a:hover {
-    color: #f00;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgba(51, 51, 51, 0.5);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 10rem; /* 160px */
+    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%; 
+    width: 100%;
 }
 
 .dropdown-content a {
     color: white;
-    padding-top: 16px;
-    padding-bottom: 15px;
+    padding-top: 1rem; /* 16px */
+    padding-bottom: 0.9375rem; /* 15px */
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: rgba(85, 85, 85, 0.7); 
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    color: #f00;  
-}
-
 .navbar a, .dropdown-content a {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
 }
