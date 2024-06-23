@@ -157,7 +157,7 @@ header a:hover{
     position: relative;
     right: 280px;
     bottom: 130px;
-    color:blue;
+    color:white;
     text-align: center;
     text-transform: uppercase;
    
@@ -170,7 +170,7 @@ header a:hover{
     position: relative;
     right: 85px;
     bottom: 70px;
-    color:blue;
+    color:white;
     text-align: justify;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -194,7 +194,7 @@ header a:hover{
     position: relative;
     right: 85px;
     bottom: 17px;
-    color:black;
+    color:white;
     text-align: justify;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -265,7 +265,7 @@ header a:hover{
     position: relative;
     right: 50px;
     bottom: 143px;
-    color:black;
+    color:white;
 }
 
 .type9::first-letter{
@@ -280,7 +280,7 @@ header a:hover{
     position: relative;
     right: 85px;
     bottom: 80px;
-    color:black;
+    color:white;
     text-align: justify;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -294,7 +294,7 @@ header a:hover{
     position: relative;
     right: 85px;
     bottom: 80px;
-    color:black;
+    color:white;
     text-align: justify;
     letter-spacing: 1px;
     text-transform: lowercase;
@@ -329,7 +329,7 @@ header a:hover{
     position: relative;
     top: 40px;
     right: 58px;
-    color:red;
+    color:white;
     font-size: 15px;
      font-weight: bold;
      text-align: justify;
@@ -900,4 +900,39 @@ header a:hover{
     margin-top: 2px; /* Adjusted margin for better alignment */
     font-size: 18px; /* Adjusted font size */
     color: black; /* Set text color to white */
+}
+.boy{
+    position: absolute;
+    top: 460px;
+
+}
+.qweo{
+    font-size: 22px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 340px;
+    left: -100px;
+    color: blue;
+    width: 300px;
+}
+.qweo:hover{
+    transform: translateY(15px);
+}
+.nono{
+width: 500px;
+margin-top: 20px;
+font-size: 20px;
+border: none;
+background-color: none;
+font-weight: bold;
+color: #000;
+font-family: sans-serif;
+}
+.qwro{
+    position: relative;
+    left: 50px;
 }
