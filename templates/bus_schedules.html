@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/bus_schedules.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home_style.css') }}">
+    
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <h1>Bus Schedule</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bus Number</th>
+                    <th>Departure Time</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="bus-schedule">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Button to go back to the home page -->
+    <button onclick="window.location.href='{{ url_for('home') }}'">Go Back to Home</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const busScheduleData = [
+                { busNumber: "101", departureTime: "09:00", Location: "Ramses" },
+                { busNumber: "202", departureTime: "10:30", Location: "6 october" },
+                { busNumber: "303", departureTime: "12:00", Location: "Fifth Settlement" },
+                { busNumber: "404", departureTime: "14:00", Location: "el shorouk" },
+            ];
+
+            const busScheduleTable = document.getElementById("bus-schedule");
+
+            busScheduleData.forEach(schedule => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${schedule.busNumber}</td>
+                    <td>${schedule.departureTime}</td>
+                    <td>${schedule.Location}</td>
+                `;
+                busScheduleTable.appendChild(row);
+            });
+
+        });
+    </script>
+</body>
+</html>

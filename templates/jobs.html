@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobs</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/about_us.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home_style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            /* Changed background to dark */
+            color: #fff;
+            /* Changed text color to white */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            /* Center vertically */
+            justify-content: center;
+            /* Center horizontally */
+            height: 100vh;
+            /* Full height of viewport */
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #333;
+            /* Changed container background to darker shade */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        .job {
+            border-bottom: 1px solid #555;
+            /* Changed border color */
+            padding: 10px 0;
+        }
+
+        .job:last-child {
+            border-bottom: none;
+        }
+
+        .job h2 {
+            margin: 0;
+        }
+
+        .job p {
+            margin-top: 5px;
+            color: #ccc;
+            /* Changed text color */
+        }
+
+        .apply-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .apply-button:hover {
+            background-color: #218838;
+        }
+
+        .apply-button span {
+            margin-left: 10px;
+        }
+
+        .apply-button .arrow {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+
+        <nav class="navbar">
+            <a href="{{ url_for('GHR') }}">Green Human Resource</a>
+            <a href="{{ url_for('vistor') }}">home</a>
+            <a href="{{ url_for('login') }}">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Available Jobs</h1>
+        <div class="job">
+            <h2>Ceramic Engineer</h2>
+            <p>As a Ceramic Engineer, you will be responsible for researching, designing, and developing ceramic
+                materials and products. Your role involves working on improving the properties of ceramics to meet
+                specific requirements for various applications such as electronics, medical devices, and industrial
+                machinery. You will collaborate with cross-functional teams to ensure product quality and performance.
+            </p>
+        </div>
+        <div class="job">
+            <h2>Quality Control Inspector</h2>
+            <p>The Quality Control Inspector ensures that all ceramic products meet the company's standards of quality
+                and safety before they reach the customer. This role involves inspecting materials, in-process
+                production, and finished products to ensure compliance with specifications and quality requirements.</p>
+        </div>
+        <div class="job">
+            <h2>Production Supervisor</h2>
+            <p>As a Production Supervisor, you will oversee the day-to-day operations of the ceramic manufacturing
+                process. You will be responsible for managing production schedules, ensuring efficient use of resources,
+                and maintaining a safe and productive work environment.</p>
+        </div>
+    </div>
+
+    <a href="{{ url_for('application_page') }}" class="apply-button">
+        <div class="arrow"></div>
+        <span>Apply Now</span>
+    </a>
+
+</body>
+
+</html>

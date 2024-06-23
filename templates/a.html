@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/b.css') }}">
+
+
+</head>
+<body>
+  <div class="container">
+    <img src="static/images/whitelogo.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="topcontainer">
+    <img src="static/images/gemma header.png" alt="logo" class="background-image">
+  </div>
+
+
+<div class="wrapper">
+  <div class="login_box">
+    <div class="login-header">
+      <span>Login</span>
+    </div>
+    
+<form action="/home" method="post">
+    <div class="input_box">
+      <input type="text" id="user" class="input-field" required name="username">
+      <label for="user" class="label">Username</label>
+      <i class="bx bx-user icon"></i>
+    </div>
+
+    <div class="input_box">
+      <input type="password" id="pass" class="input-field" required name="password">
+      <label for="pass" class="label">Password</label>
+      <i class="bx bx-lock-alt icon"></i>
+    </div>
+
+    <div class="remember-forgot">
+      <div class="remember-me">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+      </div>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+    <div class="input_box">
+      <input type="submit" class="input-submit" value="Login" method="post">
+    </div>
+
+  
+</form>
+
+
+  
+</body>
+</html>
